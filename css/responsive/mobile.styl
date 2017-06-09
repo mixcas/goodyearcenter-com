@@ -7,7 +7,7 @@ $white-color = #fff
 body
   width: 100vw
   max-width: 100%
-  overflow-x: hidden
+  overflow: hidden
 
 #header
   position: absolute
@@ -57,11 +57,19 @@ body
 // SCROLL TO PROMOCIONES
 .scroll-to-promociones
   opacity: 0.8
+
   svg
+    animation: updown 1s infinite
     width: 100%
     max-width: 85px
     fill: $white-color
     stroke: $white-color
+
+@keyframes updown {
+  0%   { transform: translateY(-10px); }
+  50%   { transform: translateY(0px); }
+  100%   { transform: translateY(-10px); }
+}
 
 // PROMOCIONES
 .promociones
@@ -107,4 +115,6 @@ body
     transform: translateX(0%)
 
 
+.background-dark-blue
+  background-color: $dark-blue
 
