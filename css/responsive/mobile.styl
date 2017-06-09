@@ -1,0 +1,51 @@
+// VARS
+$blue-color = #1f55ad
+$white-color = #fff
+
+#header
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 1000
+
+.menu-toggle
+  width: 24px
+  height: 24px
+
+  svg
+    width: 24px
+    height: 24px
+
+    path
+      fill: $blue-color
+
+
+// MENU
+#menu
+  background-color: $blue-color
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  display: none
+  z-index: 100
+  color: $white-color
+
+.show-menu
+  #menu
+    display: block
+
+  .menu-toggle
+    svg path
+      fill: $white-color
+
+.home-background
+  background-image: url('/img/dist/home_bg.gif')
+  background-size: cover
+  background-position: center
+
+.full
+  width: 100vw
+  height: 100vh
+  max-width: 100%
