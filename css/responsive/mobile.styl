@@ -21,7 +21,7 @@ body
 #logo
   max-width: 68px
 
-.menu-toggle
+.menu-hamburger
   width: 24px
   height: 24px
 
@@ -34,6 +34,7 @@ body
 
 // MENU
 #menu
+  text-transform: uppercase
   background-color: $blue-color
   position: fixed
   top: 0
@@ -43,7 +44,10 @@ body
   display: none
   z-index: 100
   color: $white-color
-  font-size: 3rem
+  font-size: 1.6rem
+
+  a
+    letter-spacing: 8px
 
 .show-menu
   #menu
