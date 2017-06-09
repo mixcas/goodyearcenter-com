@@ -1,7 +1,13 @@
 // VARS
 $blue-color = #1f55ad
 $light-blue = #80b1d9
+$dark-blue = rgb(10,26,52)
 $white-color = #fff
+
+body
+  width: 100vw
+  max-width: 100%
+  overflow-x: hidden
 
 #header
   position: absolute
@@ -17,7 +23,6 @@ $white-color = #fff
   height: 24px
 
   svg
-    width: 24px
     height: 24px
 
     path
@@ -49,6 +54,15 @@ $white-color = #fff
   background-size: cover
   background-position: center
 
+// SCROLL TO PROMOCIONES
+.scroll-to-promociones
+  opacity: 0.8
+  svg
+    width: 100%
+    max-width: 85px
+    fill: $white-color
+    stroke: $white-color
+
 // PROMOCIONES
 .promociones
   background-image: url('/img/dist/ninos.png')
@@ -56,6 +70,7 @@ $white-color = #fff
   background-position: center
   background-size: contain
   background-repeat: no-repeat
+  position: relative
 
 .promociones-column
   height: 100vh
@@ -64,3 +79,32 @@ $white-color = #fff
   width: 100vw
   height: 100vh
   max-width: 100%
+
+// TERMS
+#terms
+  position: absolute
+  top: 0;
+  right: 0;
+  max-height: 100vh;
+  overflow: scroll;
+  color: $white-color
+  transition: transform 300ms
+  transform: translateX(100%)
+  background-color: $dark-blue
+  overflow-x: hidden
+
+.close-terms
+  position: absolute
+  top: 20px
+  left: 0px
+  svg
+    width: 76px
+    fill: $white-color
+    stroke: $white-color
+
+.show-terms
+  #terms
+    transform: translateX(0%)
+
+
+
