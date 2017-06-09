@@ -10,6 +10,10 @@ Site = {
       _this.onResize();
     });
 
+    $('.menu-toggle').on('click', function() {
+      $('body').toggleClass('show-menu');
+    });
+
   },
 
   onResize: function() {
